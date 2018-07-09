@@ -37,7 +37,8 @@ class SongsController < ApplicationController
 
     def destroy
         binding.pry
-        
+        redirect_to songs_path
+
     end
 
     private
