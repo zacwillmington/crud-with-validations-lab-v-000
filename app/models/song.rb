@@ -7,6 +7,4 @@ class Song < ActiveRecord::Base
           year_rel.validates :release_year, numericality: { less_than_or_equal_to:  2007 }
     end
     validates :artist_name, presence: true
-
-    current_year = { year: Time.new.year }
 end
