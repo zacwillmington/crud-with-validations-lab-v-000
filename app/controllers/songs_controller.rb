@@ -13,7 +13,7 @@ class SongsController < ApplicationController
         binding.pry
         @song = Song.new(song_params)
         if @song.save
-            redirect_to :show
+            redirect_to song_path(@song)
         else
             render :edit
         end
