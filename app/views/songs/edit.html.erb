@@ -2,16 +2,16 @@
     <ul>
         <%= form_for @song do |f| %>
             <%= f.label :title %>
-            <%= f.text_area :title %>
+            <%= f.text_area :title, @song.title %>
 
             <%= f.label :released %>
-            <%= f.text_area :released %>
+            <%= f.text_area :released, @song.released %>
 
             <%= f.label :release_year %>
-            <%= f.text_area :release_year %>
+            <%= f.text_area :release_year, @song.release_year %>
 
             <%= f.label :artist_name %>
-            <%= f.text_area :artist_name %>
+            <%= f.text_area :artist_name, @song. %>
 
             <%= f.label :genre %>
             <%= f.text_area :genre %>
