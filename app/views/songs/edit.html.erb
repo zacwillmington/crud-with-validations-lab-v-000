@@ -2,7 +2,7 @@
     <ul>
         <%= form_for @song do |f| %>
             <%= f.label :title %>
-            <%= f.text_area :title, @song.title %>
+            <%= f.text_area_tag :title, @song.title %>
 
             <%= f.label :released %>
             <%= f.text_area_tag :released, @song.released %>
